@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class Money_Converter {
+
+    public static int quarters(int total) {
+        return total/25;
+    }
+
+    public static int dimes(int total) {
+        return (total - quarters(total)*25) /10;
+    }
+
+    public static int nickels(int total) {
+        return (total - (quarters(total)*25) - (dimes(total)*10)) / 5;
+    }
+
+    public static int pennies(int total) {
+        return total - (quarters(total)*25) - (dimes(total)*10) - (nickels(total)*5);
+    }
+
+    public static double eur_conversion(int total){
+        return total * 0.92;
+    }
+
+    public static double yen_conversion(int total){
+        return total * 148.18;
+    }
+
+    public static double pound_conversion(int total){
+        return total * 0.79;
+    }
+
+    public static double rupee_conversion(int total){
+        return total * 83.12;
+    }
+
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String total;
+        int intTotal;
+        int intTotalTwo;
+
+        System.out.println("Enter the total amount of dollars and cents:");
+        total = scanner.next();
+
+        total = total.replace(".","");
+        intTotal = Integer.parseInt(total);
+
+        System.out.println(quarters(intTotal) + " Quarters,"
+                +dimes(intTotal) + " Dimes,"
+                +nickels(intTotal) + " Nickels,"
+                +pennies(intTotal) + " Pennies");
+
+        System.out.println("Exchange rate:");
+        System.out.println("Euros: " + eur_conversion(intTotal) / 100);
+        System.out.println("Chinese Yen: " + yen_conversion(intTotal) / 100);
+        System.out.println("Pounds: " + pound_conversion(intTotal) / 100);
+        System.out.println("Rupee: " + rupee_conversion(intTotal) / 100);
+    }
+}
