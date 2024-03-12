@@ -1,3 +1,5 @@
+package ArrayListShoppingList;
+
 import javax.swing.*;
 import java.util.*;
 

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Money_Converter {
+public class MoneyConverterAndExchange {
 
     public static int quarters(int total) {
         return total/25;

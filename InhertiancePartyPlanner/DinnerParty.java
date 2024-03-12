@@ -1,3 +1,5 @@
+package InhertiancePartyPlanner;
+
 public class DinnerParty extends Party {
     private int dinner_choice;
     private String desert_choice;

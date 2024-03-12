@@ -1,3 +1,5 @@
+package InhertiancePartyPlanner;
+
 import javax.swing.*;
 
 public class UseDinnerParty {

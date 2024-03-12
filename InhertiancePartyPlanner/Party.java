@@ -1,3 +1,5 @@
+package InhertiancePartyPlanner;
+
 public class Party {
     public int guests;
 

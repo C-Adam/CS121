@@ -1,3 +1,5 @@
+package ArrayListShoppingList;
+
 public class ItemOrder {
      int quantity;
      Item item;

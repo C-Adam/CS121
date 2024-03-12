@@ -1,5 +1,6 @@
+package ArrayListShoppingList;
+
 import javax.swing.*;
-import java.util.Scanner;
 
 public class ShoppingListApp {
     public static void main(String[] args) {
